@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chat UI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+    <button id="newChat" class="btn btn-light">+ New Chat</button>
+    <ul id="history"></ul>
+    <div class="profile">Prashanth</div>
+</aside>
+
+<!-- Main -->
+<main class="main">
+
+<header>
+    <h3>⚡ AI Chat</h3>
+</header>
+
+<section id="chatArea">
+
+<!-- Welcome -->
+<div id="welcome">
+    <h2>How can I help you?</h2>
+
+    <div class="cards">
+        <div class="card"><p>Brainstorm ideas</p></div>
+        <div class="card"> Study <p>Learn concepts</p></div>
+        <div class="card"> Coding <p>Write code</p></div>
+        <div class="card"> Goals <p>Plan tasks</p></div>
+    </div>
+</div>
+
+<div id="messages"></div>
+
+<!-- Typing -->
+<div id="typing" class="typing" style="display:none;">
+    <span></span><span></span><span></span>
+</div>
+
+</section>
+
+<!-- Input -->
+<section class="inputArea">
+    <button><i class="fa fa-paperclip"></i></button>
+
+    <textarea id="input" rows="1" placeholder="Type your message..."></textarea>
+
+    <button id="send" disabled><i class="fa fa-paper-plane"></i></button>
+</section>
+
+<p class="footer">AI can make mistakes</p>
+
+</main>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
